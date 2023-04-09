@@ -26,7 +26,7 @@ const MainContainer: Component = () => {
       </div>
 
       <div
-        class={`absolute flex lg:block h-full right-0 bottom-0 lg:relative w-[380px] z-40 items-end gap-2 lg:translate-x-0
+        class={`absolute flex lg:block h-full right-0 top-0 lg:relative w-[380px] z-30 items-end gap-2 lg:translate-x-0 
         ${
           isChatBoxOpen() ? "translate-x-0" : "translate-x-[320px]"
         } transform transition-transform duration-300`}
@@ -34,7 +34,7 @@ const MainContainer: Component = () => {
         <div
           onClick={toggleChatBox}
           class="lg:hidden text-4xl text-custom-glowYellow 
-        bg-[rgb(40,46,73)] p-2 rounded-md  cursor-pointer mb-4 "
+        bg-[rgb(40,46,73)] p-2 rounded-md  cursor-pointer mb-4"
         >
           {isChatBoxOpen() ? (
             <RiSystemArrowRightSLine />

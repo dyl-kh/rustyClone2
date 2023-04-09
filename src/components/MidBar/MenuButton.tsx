@@ -9,7 +9,7 @@ const toggleMenu = () => {
 const MenuButton: Component = () => {
   return (
     <div
-      class="ml-3 flex justify-center items-center flex-col w-10 h-10 rounded animated-button cursor-pointer hover:hover-yellow"
+      class="ml-3 z-50 flex justify-center items-center flex-col w-10 h-10 rounded animated-button cursor-pointer hover:hover-yellow"
       onClick={toggleMenu}
     >
       <div
