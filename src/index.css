@@ -276,6 +276,10 @@ code {
   .ping-animate {
     animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
   }
+
+  .sansserif {
+    font-family: ui-sans-serif;
+  }
 }
 
 @layer components {
@@ -372,4 +376,8 @@ code {
   /* .ontop {
     @apply relative z-50;
   } */
+
+  .ui-sans-serif {
+    @apply sansserif;
+  }
 }
