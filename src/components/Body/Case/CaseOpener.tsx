@@ -66,7 +66,9 @@ export const openCase = () => {
   createSpinList();
   setScrollPosition(0);
   const targetIndex = SPIN_LIST_SIZE / 2;
-  const halfScreenWidth = window.innerWidth / 2;
+  const adjustedWidth =
+    window.innerWidth > 1100 ? window.innerWidth - 310 : window.innerWidth;
+  const halfScreenWidth = adjustedWidth / 2;
   const targetScrollPosition = targetIndex * 123.75 - halfScreenWidth;
   let currentPosition = scrollPosition();
   let duration = 5000;
@@ -106,7 +108,9 @@ export const openCase = () => {
 
 const updateScrollPosition = () => {
   const targetIndex = SPIN_LIST_SIZE / 2;
-  const halfScreenWidth = window.innerWidth / 2;
+  const adjustedWidth =
+    window.innerWidth > 1100 ? window.innerWidth - 310 : window.innerWidth;
+  const halfScreenWidth = adjustedWidth / 2;
   const targetScrollPosition = targetIndex * 123.75 - halfScreenWidth;
   setScrollPosition(targetScrollPosition);
 };
