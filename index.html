@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" type="image/ico" href="//assets/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      type="image/ico"
+      href="data:image/x-icon;base64,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"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,8 +22,8 @@
       rel="stylesheet"
     />
     <title>RustylootGG</title>
-    <script type="module" crossorigin src="/rustyClone2/assets/index-21568241.js"></script>
-    <link rel="stylesheet" href="/rustyClone2/assets/index-70bcd55a.css">
+    <script type="module" crossorigin src="/rustyClone2/assets/index-a4ba7c43.js"></script>
+    <link rel="stylesheet" href="/rustyClone2/assets/index-ba39c7b2.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
