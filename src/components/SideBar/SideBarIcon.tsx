@@ -21,13 +21,15 @@ const SideBarIcon: Component<SideBarIconProps> = ({ icon, text, isNew }) => {
     <div
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
-      class="relative"
+      class="relative cursor-pointer md:self-auto self-end"
     >
-      <a href="#">
-        <div class="flex flex-col justify-center items-center gap-2 ">
-          <img src={icon} alt={`${text} icon`} class="" />
+      <a href="# ">
+        <div class="relative flex flex-col justify-around md:justify-center items-center gap-2 h-auto w-max">
+          <div class="">
+            <img src={icon} alt={`${text} icon`} class="" />
+          </div>
           <div
-            class={`text-sm  font-oswald font-semibold ${
+            class={`text-md  font-oswald font-semibold ${
               isHover() ? "text-custom-glowYellow" : "text-custom-text"
             }`}
           >

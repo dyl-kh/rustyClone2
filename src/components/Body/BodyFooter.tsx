@@ -22,13 +22,13 @@ const BodyFooter: Component = () => {
           <div>Copyright &copy; 2022 Rustyloot.gg. All rights reserved.</div>
         </div>
       </div>
-      <div class="flex flex-col text-custom-text font-semibold text-xs gap-3 ">
-        <div class="text-white oswald font-semibold text-base">INFO</div>
-        <a href="#">FAQ</a>
-        <a href="#">TOS</a>
-        <a href="#">Provably Fair</a>
-      </div>
       <div class="flex flex-row flex-wrap gap-10">
+        <div class="flex flex-col text-custom-text font-semibold text-xs gap-3 ">
+          <div class="text-white oswald font-semibold text-base">INFO</div>
+          <a href="#">FAQ</a>
+          <a href="#">TOS</a>
+          <a href="#">Provably Fair</a>
+        </div>
         <div class="flex flex-col text-custom-text font-semibold text-xs gap-3 ">
           <div class="text-white oswald font-semibold text-base">GAMES</div>
           <a href="#">Coin Flip</a>

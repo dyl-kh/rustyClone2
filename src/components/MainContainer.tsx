@@ -29,11 +29,11 @@ const MainContainer: Component = () => {
     <div class="absolute top-0 left-0 w-full h-full bg-custom-mainPurple lg:flex overflow-hidden">
       <div class="relative z-10 h-full flex-1 lg:w-[calc(100%-20rem)]">
         <TopBar />
-        <div class="flex lg:flex-row flex-col h-full overflow-hidden relative">
-          <div class="order-2 lg:order-1 ">
+        <div class="flex md:flex-row flex-col h-full overflow-hidden relative">
+          <div class="order-2 md:order-1 ">
             <SideBar />
           </div>
-          <div class="flex flex-col w-full relative flex-1 h-full overflow-y-auto order-1">
+          <div class="flex flex-col w-full relative flex-1 h-full overflow-y-auto order-1 md:order-2 ">
             <MidBar />
             {menuOpen() && windowWidth() < 900 ? (
               <MenuSmall />

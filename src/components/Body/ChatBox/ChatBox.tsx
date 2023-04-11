@@ -12,7 +12,7 @@ const ChatBox: Component<ChatBoxProps> = ({ setIsChatBoxOpen }) => {
   const [chatBoxLang, setChatBoxLang] = createSignal("en");
   return (
     <div
-      class={`right-0 h-screen w-full bg-custom-bodyPurple border-l-custom-lightPurple border-l-[0.5px] z-30 `}
+      class={`right-0 h-full w-full bg-custom-bodyPurple border-l-custom-lightPurple border-l-[0.5px] z-30 `}
     >
       <div class="flex flex-col gap-6 h-full">
         <div class="p-6 pb-0 flex items-center justify-between">
