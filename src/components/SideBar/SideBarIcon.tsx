@@ -3,7 +3,7 @@ import { Component, JSX, createSignal } from "solid-js";
 interface SideBarIconProps {
   icon: string;
   text: string;
-  isNew: boolean;
+  isNew?: boolean;
 }
 
 const SideBarIcon: Component<SideBarIconProps> = ({ icon, text, isNew }) => {

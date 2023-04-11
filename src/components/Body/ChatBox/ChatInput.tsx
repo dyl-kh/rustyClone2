@@ -63,7 +63,7 @@ const ChatInput: Component<ChatInputProps> = ({
           class="bg-[rgb(37,41,64)] rounded w-full  p-3 px-4 text-white text-sm"
         />
         <img
-          src="/assets/SmileyFace.svg"
+          src="assets/SmileyFace.svg"
           alt="smiley face"
           class="absolute right-10 bottom-14 cursor-pointer"
         />

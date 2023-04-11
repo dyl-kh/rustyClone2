@@ -5,10 +5,10 @@ import BodyFooter from "./BodyFooter";
 
 const BodyContainer: Component = () => {
   return (
-    <div class="w-full h-full overflow-y-scroll scrollbar-hide flex flex-col justify-between relative bg-custom-backPurple">
-      <div class="px-2">
+    <div class="w-full h-full overflow-y-scroll scrollbar-hide flex flex-col justify-between relative bg-custom-footerPurple">
+      <div class="px-2 bg-custom-backPurple">
         <img
-          src="/assets/RustBackground.png"
+          src="assets/RustBackground.png"
           alt="rust background"
           class="absolute top-0 left-0 min-w-full"
         />

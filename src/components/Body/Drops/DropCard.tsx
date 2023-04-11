@@ -19,7 +19,7 @@ const DropCard: Component<DropCardProps> = ({ drop }) => {
     <div
       class={`flex h-[4.5rem] w-60 min-w-[15rem] card-gradient-vertical ${drop.type} mt-2  z-20 `}
     >
-      <div class="bg-[url(/assets/BloodCardDecal.svg)] bg-cover">
+      <div class="bg-[url(assets/BloodCardDecal.svg)] bg-cover">
         <div id="img" class="flex items-center ml-2 gap-3">
           <div class="max-h-[4.5rem] translate-y-[7px]">
             <div
@@ -40,7 +40,7 @@ const DropCard: Component<DropCardProps> = ({ drop }) => {
           <div class="flex items-center justify-center flex-col">
             <div class="text-custom-cardText font-bold">{drop.name}</div>
             <div class="flex gap-1">
-              <img src="/assets/Chips.svg" alt="Poker Chips" class="h-5" />
+              <img src="assets/Chips.svg" alt="Poker Chips" class="h-5" />
               <div class="text-white font-semibold text-sm">
                 {formatNumberToString(drop.price)}
               </div>

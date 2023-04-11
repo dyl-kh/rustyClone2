@@ -21,7 +21,7 @@ const CaseFooterCard: Component<CaseFooterCardProps> = ({ skin }) => {
         class={`flex card-gradient-horizontal ${skin.rarity} ontop z-40 h-full relative items-center justify-center 
         mx-[2px] translate-y-[-2px] rounded-md px-4 pb-3`}
       >
-        <div class="bg-[url(/assets/WhiteBloodDecal.svg)] bg-cover">
+        <div class="bg-[url(assets/WhiteBloodDecal.svg)] bg-cover">
           <div id="img" class="flex flex-col items-center">
             <div class="translate-y-[4px] h-32 ">
               <div
@@ -46,7 +46,7 @@ const CaseFooterCard: Component<CaseFooterCardProps> = ({ skin }) => {
                 {skin.name}
               </div>
               <div class="flex gap-1">
-                <img src="/assets/Chips.svg" alt="Poker Chips" class="h-4" />
+                <img src="assets/Chips.svg" alt="Poker Chips" class="h-4" />
                 <div class="text-white font-semibold text-sm oswald">
                   {formatNumberToString(skin.price)}
                 </div>

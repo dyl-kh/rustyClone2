@@ -17,7 +17,7 @@ const RandomOrgArgs = {
 const CaseHeader: Component = () => {
   return (
     <div class="flex flex-col mt-2 border-custom-lightPurple border-2 rounded ">
-      <div class="flex bg-[url(/assets/ModalHeaderBg.png)] bg-cover py-4 pl-6 border-b-2 rounded border-custom-lightPurple">
+      <div class="flex bg-[url(assets/ModalHeaderBg.png)] bg-cover py-4 pl-6 border-b-2 rounded border-custom-lightPurple">
         <div class="text-white text-4xl">
           <a href="#">
             <RiSystemArrowLeftSLine />
@@ -30,7 +30,7 @@ const CaseHeader: Component = () => {
       <div class="flex flex-col">
         <div class="flex items-center justify-center sm:justify-start h-full sm:pl-10 py-6 gap-2 sm:gap-8 flex-col sm:flex-row">
           <img
-            src="/assets/FreeDailyCase.png"
+            src="assets/FreeDailyCase.png"
             alt="free daily case"
             class="h-32"
           />

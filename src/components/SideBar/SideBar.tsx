@@ -19,13 +19,13 @@ const SideBar: Component = () => {
         class="flex flex-col overflow-y-scroll scrollbar-hide items-center justify-start w-full flex-1"
       >
         <div class="flex lg:flex-col gap-[14px] lg:py-4 items-center justify-between w-full px-8 pb-14 pt-3 lg:p-0">
-          <SideBarIcon icon="/assets/MainIcon.svg" text="MAIN" />
-          <SideBarIcon icon="/assets/CoinFlipIcon.svg" text="COINFLIP" />
-          <SideBarIcon icon="/assets/MINESIcon.svg" text="MINES" />
-          <SideBarIcon icon="/assets/PlinkoIcon.svg" text="PLINKO" />
-          <SideBarIcon icon="/assets/WheelIcon.svg" text="WHEEL" />
-          <SideBarIcon icon="/assets/UpgraderIcon.svg" text="UPGRADER" isNew />
-          <SideBarIcon icon="/assets/PVPMinesIcon.svg" text="PVP MINES" isNew />
+          <SideBarIcon icon="assets/MainIcon.svg" text="MAIN" />
+          <SideBarIcon icon="assets/CoinFlipIcon.svg" text="COINFLIP" />
+          <SideBarIcon icon="assets/MinesIcon.svg" text="MINES" />
+          <SideBarIcon icon="assets/PlinkoIcon.svg" text="PLINKO" />
+          <SideBarIcon icon="assets/WheelIcon.svg" text="WHEEL" />
+          <SideBarIcon icon="assets/UpgraderIcon.svg" text="UPGRADER" isNew />
+          <SideBarIcon icon="assets/PVPMinesIcon.svg" text="PVP MINES" isNew />
         </div>
       </div>
 
