@@ -128,6 +128,18 @@ code {
     ) !important;
   }
 
+  .yellow-glow-shadow-big {
+    --my-drop-shadow-color: rgba(255, 199, 1, 0.6) !important;
+    --my-drop-shadow-offset-x: 0px;
+    --my-drop-shadow-offset-y: 0px;
+    --my-drop-shadow-blur: 50px;
+
+    filter: drop-shadow(
+      var(--my-drop-shadow-offset-x) var(--my-drop-shadow-offset-y)
+        var(--my-drop-shadow-blur) var(--my-drop-shadow-color)
+    ) !important;
+  }
+
   .red-glow-shadow {
     --my-drop-shadow-color: rgba(255, 1, 1, 0.9) !important;
     --my-drop-shadow-offset-x: 0px;
@@ -305,6 +317,10 @@ code {
 
   .outer-yellow-glow {
     @apply yellow-glow-shadow transition-all duration-300;
+  }
+
+  .outer-yellow-glow-big {
+    @apply yellow-glow-shadow-big transition-all duration-300;
   }
 
   .spin360:hover {

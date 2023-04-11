@@ -2,7 +2,7 @@ import { Component, createSignal } from "solid-js";
 
 interface TopBarTextProps {
   text: string;
-  active: true;
+  active?: true;
 }
 
 const TopBarText: Component<TopBarTextProps> = ({ text, active }) => {

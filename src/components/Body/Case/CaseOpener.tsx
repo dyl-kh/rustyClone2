@@ -1,4 +1,4 @@
-import { createSignal, createEffect, onCleanup } from "solid-js";
+import { createSignal, createEffect, onMount } from "solid-js";
 import { render } from "solid-js/web";
 import ItemCaseCard from "./ItemCaseCard";
 import { Skin } from "./CaseContainer";
@@ -48,40 +48,39 @@ const skins = [
   },
 ] as Skin[];
 
-const SPIN_LIST_SIZE = 50;
+const SPIN_LIST_SIZE = 100;
 
 const [scrollPosition, setScrollPosition] = createSignal(0);
 const [openedSkin, setOpenedSkin] = createSignal<Skin>(skins[0]);
 const [isSpinning, setIsSpinning] = createSignal(false);
 const [spinList, setSpinList] = createSignal<Skin[]>([]);
+const [firstSpin, setFirstSpin] = createSignal(true);
+const [finishedSpin, setFinishedSpin] = createSignal(false);
 
 let spinInterval: number;
 
 export const openCase = () => {
   if (isSpinning()) return;
-  setSpinList([]);
+  if (!firstSpin()) {
+    setSpinList([]);
+    createSpinList();
+  }
+  setFirstSpin(false);
   setOpenedSkin(skins[0]);
   setIsSpinning(true);
 
-  createSpinList();
   setScrollPosition(0);
   const targetIndex = SPIN_LIST_SIZE / 2;
-  const adjustedWidth =
-    window.innerWidth > 1100 ? window.innerWidth - 365 : window.innerWidth;
+  const adjustedWidth = getAdjustedWidth();
   const halfScreenWidth = adjustedWidth / 2;
   const targetScrollPosition = targetIndex * 123.75 - halfScreenWidth;
   let currentPosition = scrollPosition();
-  let duration = 5000;
+  let duration = 8000;
   let startTime: number | undefined;
 
-  const customEase = (t: number) => {
-    const easeInSpeed = 2;
-    const easeOutSpeed = 4;
-    if (t < 0.5) {
-      return Math.pow(t * 2, easeInSpeed) / 2;
-    } else {
-      return 1 - Math.pow(1 - (t - 0.5) * 2, easeOutSpeed) / 2;
-    }
+  const ease = (t: number) => {
+    const adjustedT = 1 - t;
+    return 1 - Math.pow(adjustedT, 3);
   };
 
   const animate = (timestamp: number) => {
@@ -91,12 +90,16 @@ export const openCase = () => {
 
     const changeInPosition = targetScrollPosition - currentPosition;
     const newPosition =
-      currentPosition + changeInPosition * customEase(progress / duration);
+      currentPosition + changeInPosition * ease(progress / duration);
     setScrollPosition(newPosition);
 
     if (progress < duration) {
       requestAnimationFrame(animate);
     } else {
+      setFinishedSpin(true);
+      setTimeout(() => {
+        setFinishedSpin(false);
+      }, 1000);
       setOpenedSkin(spinList()[targetIndex]);
       setIsSpinning(false);
     }
@@ -108,11 +111,20 @@ export const openCase = () => {
 
 const updateScrollPosition = () => {
   const targetIndex = SPIN_LIST_SIZE / 2;
-  const adjustedWidth =
-    window.innerWidth > 1100 ? window.innerWidth - 365 : window.innerWidth;
+  const adjustedWidth = getAdjustedWidth();
   const halfScreenWidth = adjustedWidth / 2;
   const targetScrollPosition = targetIndex * 123.75 - halfScreenWidth;
   setScrollPosition(targetScrollPosition);
+};
+
+const getAdjustedWidth = () => {
+  return window.innerWidth > 1536
+    ? window.innerWidth - 250
+    : window.innerWidth > 1100
+    ? window.innerWidth - 150
+    : window.innerWidth > 900
+    ? window.innerWidth + 180
+    : window.innerWidth + 275;
 };
 
 const createSpinList = () => {
@@ -145,6 +157,9 @@ createEffect(() => {
 });
 
 const App = () => {
+  onMount(() => {
+    createSpinList();
+  });
   return (
     <div class="border-custom-lightPurple bg-custom-darkPurple border-2 h-80 rounded flex flex-col gap-2 ">
       <div class="overflow-hidden max-w-full h-full relative">
@@ -161,13 +176,11 @@ const App = () => {
           <img src="assets/caseline.svg" alt="case line" />
           <img src="assets/CaseArrow.svg" alt="case arrow" class="rotate-180" />
         </div>
-        {/* <div
-          id="vertical-line"
-          class="relative border-2 border-custom-glowYellow w-1 h-96 left-1/2"
-        ></div> */}
       </div>
     </div>
   );
 };
+
+export { finishedSpin };
 
 export default App;
