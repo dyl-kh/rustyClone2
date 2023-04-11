@@ -51,7 +51,7 @@ const MainContainer: Component = () => {
         ${
           isChatBoxOpen()
             ? "sm:translate-x-0"
-            : "sm:translate-x-[320px] translate-x-[100%] duration-0"
+            : "sm:translate-x-[320px] translate-x-[100%]"
         } transform transition-transform duration-300`}
       >
         <div
