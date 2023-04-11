@@ -15,10 +15,10 @@ const ChatInput: Component<ChatInputProps> = ({
   };
   return (
     <div class="flex flex-col bg-[rgb(22,27,42)] w-full items-center p-4 gap-1">
-      <div class="flex gap-1">
+      <div class="flex gap-1 w-full justify-center px-3">
         <button
           onClick={() => changeLanguage("en")}
-          class={`flex gap-1 bg-[rgb(37,41,64)] p-2 text-custom-text text-xs items-center justify-center rounded ${
+          class={`flex-1 flex gap-1 bg-[rgb(37,41,64)] p-2 text-custom-text text-xs items-center justify-center rounded ${
             chatBoxLang() === "en" && "text-white bg-custom-icon"
           }`}
         >
@@ -31,7 +31,7 @@ const ChatInput: Component<ChatInputProps> = ({
         </button>
         <button
           onClick={() => changeLanguage("ru")}
-          class={`flex gap-1 bg-[rgb(37,41,64)] p-2 text-custom-text text-xs items-center justify-center rounded ${
+          class={`flex-1  flex gap-1 bg-[rgb(37,41,64)] p-2 px-1 text-custom-text text-xs items-center justify-center rounded ${
             chatBoxLang() === "ru" && "text-white bg-custom-icon"
           }`}
         >
@@ -44,7 +44,7 @@ const ChatInput: Component<ChatInputProps> = ({
         </button>
         <button
           onClick={() => changeLanguage("es")}
-          class={`flex  gap-1 bg-[rgb(37,41,64)] p-2 text-custom-text text-xs items-center justify-center rounded ${
+          class={`flex-1 flex  gap-1 bg-[rgb(37,41,64)] p-2 text-custom-text text-xs items-center justify-center rounded ${
             chatBoxLang() === "es" && "text-white bg-custom-icon"
           }`}
         >

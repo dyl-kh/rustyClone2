@@ -7,7 +7,7 @@ import { AiOutlineStar } from "solid-icons/ai";
 
 const MidNav: Component = () => {
   return (
-    <div class="sticky flex items-center justify-center gap-5 flex-1">
+    <div class="sticky flex md:items-center items-start md:flex-row p-4 flex-col justify-center gap-5 flex-1 ">
       <MidNavIcon icon={<FiShield />} text={"PROVABLY FAIR"} />
       <MidNavIcon icon={<TbHeadset />} text={"SUPPORT"} />
       <MidNavIcon icon={<OcPeople3 />} text={"AFFILIATES"} />

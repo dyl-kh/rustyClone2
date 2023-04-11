@@ -36,7 +36,7 @@ createEffect(() => {
 
 const LanguageToggle: Component = () => {
   return (
-    <div class="relative z-50">
+    <div class="ml-4 relative z-40">
       <div>
         <button
           type="button"

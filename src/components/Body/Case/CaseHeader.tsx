@@ -28,7 +28,7 @@ const CaseHeader: Component = () => {
         </div>
       </div>
       <div class="flex flex-col">
-        <div class="flex items-center h-full pl-10 py-6 gap-8">
+        <div class="flex items-center justify-center sm:justify-start h-full sm:pl-10 py-6 gap-2 sm:gap-8 flex-col sm:flex-row">
           <img
             src="src/assets/FreeDailyCase.png"
             alt="free daily case"
@@ -40,7 +40,7 @@ const CaseHeader: Component = () => {
               clientSeed={RandomOrgArgs.clientSeed}
               ticket={RandomOrgArgs.ticket}
             />
-            <div class="flex gap-2">
+            <div class="flex gap-2 justify-center sm:justify-start ">
               {!discordAuthorized() ? (
                 <>
                   <HeaderButton

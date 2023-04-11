@@ -16,7 +16,7 @@ export type Skin = {
 export const [discordAuthorized, setDiscordAuthorized] = createSignal(true);
 const CaseContainer: Component = () => {
   return (
-    <div class="z-40 relative flex flex-col gap-2 h-full">
+    <div class="z-30 relative flex flex-col gap-2 h-full">
       <CaseHeader />
       <CaseOpener />
       <CaseFooter />

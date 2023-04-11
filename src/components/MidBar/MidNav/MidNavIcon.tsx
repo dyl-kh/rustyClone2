@@ -15,7 +15,7 @@ const MidNavIcon: Component<MidNavIcon> = ({ icon, text }) => {
     setIsHover(false);
   };
   return (
-    <div>
+    <div class="">
       <a
         href="#"
         class={`flex items-center justify-center gap-3 hover:hover-yellow `}
@@ -32,7 +32,7 @@ const MidNavIcon: Component<MidNavIcon> = ({ icon, text }) => {
         <div
           class={`font-semibold ${
             isHover() ? "text-custom-glowYellow" : "text-custom-text"
-          } hidden lg:block font-oswald  `}
+          } block md:hidden xl:block font-oswald  `}
         >
           {text}
         </div>

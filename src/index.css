@@ -373,10 +373,6 @@ code {
     @apply ping-animate;
   }
 
-  /* .ontop {
-    @apply relative z-50;
-  } */
-
   .ui-sans-serif {
     @apply sansserif;
   }

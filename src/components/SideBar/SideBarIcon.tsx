@@ -3,9 +3,10 @@ import { Component, JSX, createSignal } from "solid-js";
 interface SideBarIconProps {
   icon: string;
   text: string;
+  isNew: boolean;
 }
 
-const SideBarIcon: Component<SideBarIconProps> = ({ icon, text }) => {
+const SideBarIcon: Component<SideBarIconProps> = ({ icon, text, isNew }) => {
   const [isHover, setIsHover] = createSignal(false);
 
   const handleMouseOver = () => {
@@ -17,7 +18,11 @@ const SideBarIcon: Component<SideBarIconProps> = ({ icon, text }) => {
   };
 
   return (
-    <div onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
+    <div
+      onMouseOver={handleMouseOver}
+      onMouseLeave={handleMouseLeave}
+      class="relative"
+    >
       <a href="#">
         <div class="flex flex-col justify-center items-center gap-2 ">
           <img src={icon} alt={`${text} icon`} class="" />
@@ -30,6 +35,11 @@ const SideBarIcon: Component<SideBarIconProps> = ({ icon, text }) => {
           </div>
         </div>
       </a>
+      {isNew ? (
+        <div class="absolute -top-3 -right-1 bg-[rgb(255,74,89)] text-white text-[8px] font-oswald font-semibold w-min px-[4px] p-[2px]">
+          NEW!
+        </div>
+      ) : null}
     </div>
   );
 };

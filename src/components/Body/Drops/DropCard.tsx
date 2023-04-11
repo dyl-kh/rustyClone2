@@ -17,7 +17,7 @@ const formatNumberToString = (num: number) => {
 const DropCard: Component<DropCardProps> = ({ drop }) => {
   return (
     <div
-      class={`flex h-[4.5rem] w-60 min-w-60 card-gradient-vertical ${drop.type} mt-2 ontop z-40 relative`}
+      class={`flex h-[4.5rem] w-60 min-w-[15rem] card-gradient-vertical ${drop.type} mt-2  z-20 `}
     >
       <div class="bg-[url(src/assets/BloodCardDecal.svg)] bg-cover">
         <div id="img" class="flex items-center ml-2 gap-3">

@@ -13,11 +13,7 @@ interface ItemCaseCardProps {
 
 const ItemCaseCard: Component<ItemCaseCardProps> = ({ item }) => {
   return (
-    <div
-      class={`flex items-center justify-center w-20 ${
-        item.target ? "border-green-600 border-2" : null
-      }`}
-    >
+    <div class={`flex items-center justify-center w-20 `}>
       <img
         src={item.img}
         alt={`${item.name}`}
