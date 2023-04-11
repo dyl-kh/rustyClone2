@@ -26,7 +26,7 @@ const skins = [
     name: "Alien Red",
     rarity: "gold",
     price: 135000,
-    img: "src/assets/alienredak.png",
+    img: "/assets/alienredak.png",
   },
   {
     name: "AK-47 Victoria",
@@ -157,10 +157,10 @@ const App = () => {
           ))}
         </div>
         <div class="relative flex justify-between flex-col items-center h-full">
-          <img src="src/assets/CaseArrow.svg" alt="case arrow" />
-          <img src="src/assets/caseline.svg" alt="case line" />
+          <img src="/assets/CaseArrow.svg" alt="case arrow" />
+          <img src="/assets/caseline.svg" alt="case line" />
           <img
-            src="src/assets/CaseArrow.svg"
+            src="/assets/CaseArrow.svg"
             alt="case arrow"
             class="rotate-180"
           />

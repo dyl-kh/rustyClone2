@@ -24,7 +24,7 @@ const skins = [
     name: "Alien Red",
     rarity: "gold",
     price: 135000,
-    img: "src/assets/alienredak.png",
+    img: "/assets/alienredak.png",
   },
   {
     name: "AK-47 Victoria",

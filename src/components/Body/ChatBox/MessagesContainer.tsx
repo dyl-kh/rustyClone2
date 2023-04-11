@@ -4,24 +4,24 @@ import ChatMessage from "./ChatMessage";
 const enMessages = [
   {
     userName: "Not Terry",
-    userImg: "src/assets/profile.webp",
+    userImg: "/assets/profile.webp",
     userColor: "purple",
-    userBadge: "src/assets/badge.svg",
+    userBadge: "/assets/badge.svg",
     message:
       "English messages. Lorem ipsum dolor sit amet, conet adipiscing elit. ",
   },
   {
     userName: "Not Terry",
-    userImg: "src/assets/profile.webp",
+    userImg: "/assets/profile.webp",
     userColor: "purple",
-    userBadge: "src/assets/badge.svg",
+    userBadge: "/assets/badge.svg",
     message: "Lorem ipsum dolor sit amet, conet adipiscing elit. ",
   },
   {
     userName: "Not Terry",
-    userImg: "src/assets/profile.webp",
+    userImg: "/assets/profile.webp",
     userColor: "purple",
-    userBadge: "src/assets/badge.svg",
+    userBadge: "/assets/badge.svg",
     message:
       "Quisque velit odio, tristique in elementum placerat, commodo quis nisi. Nulla facilisi. Vivamus imperdiet gravida tempus.",
   },
@@ -30,24 +30,24 @@ const enMessages = [
 const esMessages = [
   {
     userName: "Not Terry",
-    userImg: "src/assets/profile.webp",
+    userImg: "/assets/profile.webp",
     userColor: "purple",
-    userBadge: "src/assets/badge.svg",
+    userBadge: "/assets/badge.svg",
     message:
       "Spanish messages. Lorem ipsum dolor sit amet, conet adipiscing elit. ",
   },
   {
     userName: "Not Terry",
-    userImg: "src/assets/profile.webp",
+    userImg: "/assets/profile.webp",
     userColor: "purple",
-    userBadge: "src/assets/badge.svg",
+    userBadge: "/assets/badge.svg",
     message: "Lorem ipsum dolor sit amet, conet adipiscing elit. ",
   },
   {
     userName: "Not Terry",
-    userImg: "src/assets/profile.webp",
+    userImg: "/assets/profile.webp",
     userColor: "purple",
-    userBadge: "src/assets/badge.svg",
+    userBadge: "/assets/badge.svg",
     message:
       "Quisque velit odio, tristique in elementum placerat, commodo quis nisi. Nulla facilisi. Vivamus imperdiet gravida tempus.",
   },
@@ -56,24 +56,24 @@ const esMessages = [
 const ruMessages = [
   {
     userName: "Not Terry",
-    userImg: "src/assets/profile.webp",
+    userImg: "/assets/profile.webp",
     userColor: "purple",
-    userBadge: "src/assets/badge.svg",
+    userBadge: "/assets/badge.svg",
     message:
       "Russian messages. Lorem ipsum dolor sit amet, conet adipiscing elit. ",
   },
   {
     userName: "Not Terry",
-    userImg: "src/assets/profile.webp",
+    userImg: "/assets/profile.webp",
     userColor: "purple",
-    userBadge: "src/assets/badge.svg",
+    userBadge: "/assets/badge.svg",
     message: "Lorem ipsum dolor sit amet, conet adipiscing elit. ",
   },
   {
     userName: "Not Terry",
-    userImg: "src/assets/profile.webp",
+    userImg: "/assets/profile.webp",
     userColor: "purple",
-    userBadge: "src/assets/badge.svg",
+    userBadge: "/assets/badge.svg",
     message:
       "Quisque velit odio, tristique in elementum placerat, commodo quis nisi. Nulla facilisi. Vivamus imperdiet gravida tempus.",
   },

@@ -7,7 +7,7 @@ const BodyFooter: Component = () => {
     <div class="flex h-full bg-custom-footerPurple p-14 z-40 gap-10 flex-col md:flex-row">
       <div class="flex flex-col h-full items-start text-[rgb(129,141,157)] gap-4 text-xs w-1/2">
         <img
-          src="src/assets/RustyLogoWhite.svg"
+          src="/assets/RustyLogoWhite.svg"
           alt="rusty loot logo"
           class="h-9"
         />

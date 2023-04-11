@@ -20,7 +20,7 @@ const MenuSmall: Component = () => {
           </button>
         </div>
         <div class="flex bg-[rgb(32,39,61)] text-white items-center p-2 px-3 gap-2 text-sm">
-          <img src="src/assets/Chips.svg" alt="poker chips" class="h-4" />
+          <img src="/assets/Chips.svg" alt="poker chips" class="h-4" />
           {balance}
         </div>
         <div class="flex gap-3 mt-4 text-md">

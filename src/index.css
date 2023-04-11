@@ -194,7 +194,7 @@ code {
   }
 
   .bg-stripe {
-    background-image: url("src/assets/animatedButton.jpg");
+    background-image: url("/assets/animatedButton.jpg");
     background-size: auto 100%;
 
     background-repeat: repeat-x;

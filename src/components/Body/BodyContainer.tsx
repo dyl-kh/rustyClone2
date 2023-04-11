@@ -8,7 +8,7 @@ const BodyContainer: Component = () => {
     <div class="w-full h-full overflow-y-scroll scrollbar-hide flex flex-col justify-between relative bg-custom-backPurple">
       <div class="px-2">
         <img
-          src="src/assets/RustBackground.png"
+          src="/assets/RustBackground.png"
           alt="rust background"
           class="absolute top-0 left-0 min-w-full"
         />
